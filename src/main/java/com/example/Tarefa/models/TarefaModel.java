@@ -11,6 +11,7 @@ public class TarefaModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "descricao_tarefa")
     private String descricao;
     private LocalDate dataVencimento;
     private Boolean concluida;
